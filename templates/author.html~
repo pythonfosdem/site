@@ -1,9 +1,0 @@
-{% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block body %}
-    {% if this.name %}
-    <div class="row">
-        <h1 class="text-center">{{ this.name }}</h1>
-    </div>
-    {% endif %}
-{% endblock %}
