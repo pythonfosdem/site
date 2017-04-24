@@ -1,0 +1,64 @@
+title: Webpush notifications for Kinto
+---
+date: 2017-02-04 12:30:00
+---
+abstract:
+
+After introducing the Kinto project I am working on, I will explain why push notifications can be useful in the web environment and how I integrated the web push API in Python in Kinto as well as on the client using service workers.
+---
+description:
+
+What is Kinto?
+Kinto is a minimalist JSON storage service with synchronisation and sharing abilities. It is easy to use and to self-host.
+Kinto is used and developed at Mozilla and released under the Apache v2 licence.
+
+Why use Kinto?
+Kinto lets you focus on writing great user-facing interfaces and takes care of storing, sharing and synchronizing your application state with multiple devices or users.
+It is often a big deal for developers to develop web APIs that handle CORS, are secure, respect users privacy by supporting encryption when building applications that work offline, store data remotely, and synchronise across devices. Existing solutions either rely on big corporations that crave user data, or require a non-trivial amount of time and expertise to develop a new server for every new project.
+We want to help developers focus on their business logic and value proposition, and we don’t want the challenge of storing user data or developing backends to get in their way. The path between a new idea and deploying to production should be short!
+Also, we are firm believers of the fact that data belongs to users, and not necessarily to the application authors. Applications should be decoupled from the storage location, and users should be able to choose where their personal data is stored.
+The backend can often be universal, generic and reusable. We envision mutualisation of services and self-hosting: the backend is deployed, secured and scaled only once for several applications, which is amazing!
+
+Why Web Push?
+Push notifications allow users to opt-in to timely updates from the sites they love and allow you to effectively re-engage them with not only customized and engaging content  but also enable real time interactions with other users of the application, realtime updates and real time data sharing through websockets
+With Web Push, the notification payload is encrypted by the server sending the notification which makes it really secure and privacy aware.
+Web push is a browser API feature so that you don't need to pay or to deploy anything on the server side to have it working out of the box.
+
+
+HOW TO PUSH:
+
+What is a service worker?
+A service worker is a worker working in the background of your browser that can handle events for a given origin and path.
+It takes the form of a JavaScript file that can control the web page/site it is associated with.
+They will also allow handling of push notification events and background sync APIs.
+Service workers keep working after the page or website is closed and between browser restarts.
+
+How to use push notifications?
+On the client side, it means to setup a service worker and to get a subscription for the user browser.
+The resulting PushSubscription includes all the information that the application needs to be able to send a push message: an endpoint and the encryption key needed for authenticating and encrypting the data.
+
+What is the Kinto Push Service?
+In the Kinto use case, all users of the same web application will probably want to receive notifications informing them about the creation, updation or deletion of a collection or a record from another device.
+Each device will have its own subscription endpoint and encryption key and the payload will need to be sent to each one of them.
+My project was about creating a service that can handle subscriptions management and notification broadcast for a given channel.
+When the web application starts, it will start a service worker that will be configured to receive push notification and sent them back to all the active browser pages of the web application.
+The application will call the push service to register the push subscription on some events.
+A Kinto plugin will be triggered each time the application collection changes and it will call the ‘send the notifications’ on the push service channel.
+The push service will get the notification, encrypt it and publish it to all the subscriptions for that user.
+
+Role of the PushAPI:
+- So, once you’ve got the permission for notifs, registered the service worker and suscribed to push notifs! Congratulations, major breakthrough has been achieved already.
+- Send the endpoint associated with the subscription and generate a client public key (PushSubscription.endpoint and PushSubscription.getKey()) to the server so it can send push message when required. 
+- Using the Channel Messaging API set up a new message channel (MessageChannel.MessageChannel()) to communicate with the service worker and by calling Worker.postMessage() on the service worker, in order to open up the communication channel.
+- On the server side, store the endpoint and any other required details so they are available when a push message needs to be sent to a push subscriber. In a production app, it needs to be made sure that these details are kept hidden, so malicious parties can't steal endpoints and spam subscribers with push messages.
+- To send a push message, an HTTP POST is sent to the endpoint URL. The request must include a TTL header that limits how long the message should be queued if the user is not online. To include payload data in the request, it must be encrypted (which involves the client public key). Encryption is a complex process, so we can choose to use libraries which handles all the hard work.
+---
+subtitle: 
+---
+room: h1308
+---
+author: mansimar-kaur
+---
+day: 2017-02-04
+---
+hour: 12:30

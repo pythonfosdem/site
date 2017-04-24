@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+        {% if this.title %}
+        <div class="row">
+            <h1 class="text-center">{{ this.title }}</h1>
+        </div>
+        {% endif %}
+        {% for item in this.body.blocks %}
+            {{ item }}
+        {% endfor %}
+{% endblock %}

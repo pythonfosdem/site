@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+        {% if this.title %}
+        <div class="row">
+            <h1 class="text-center">{{ this.title }}</h1>
+        </div>
+        {% endif %}
+        {% for item in this.body.blocks %}
+            {{ item }}
+        {% endfor %}
+        <div class="row">
+            <h1 class="page-header">Sponsors</h1>
+        </div>
+        <div class="row">
+            <div class="media">
+            {% for sponsor in site.query('/sponsors')|sort(attribute='name') %}
+                <div class="media-left">
+                    {% set image = sponsor.attachments.images.get(sponsor.photo) %}
+                    {% if image %}
+                    <img src="{{ image.thumbnail(64)|url }}" />
+                    {% endif %}
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a href="{{ sponsor.url }}">{{ sponsor.name }}</a></h4>
+                    {{ sponsor.description }}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+{% endblock %}

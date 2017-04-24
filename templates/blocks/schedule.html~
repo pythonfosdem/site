@@ -1,0 +1,34 @@
+{% if this.title %}
+<div class="row">
+    <div class="page-header" id="location">
+        <h2>{{ this.title }}</h2>
+    </div>
+</div>
+{% endif %}
+<div class="row">
+{% for grouper_by_day, group_by_day in site.query('/talks')|groupby('day') %}
+    {% for grouper_by_room, group_by_room in group_by_day|groupby('room') %}
+    {% set room = site.query('/rooms').filter(F._id == grouper_by_room ).first() %}
+    <h2 class="text-center">{{ grouper_by_day }} / {{ room.fullname }}</h2>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>Hour</td>
+                <td>Title</td>
+                <td>Speaker</td>
+            </tr>
+        </thead>
+        <tbody>
+                {% for talk in group_by_room|sort(attribute='hour') %}
+                <tr>
+                    <td>{{ talk.hour }}</td>
+                    <td><a href="{{ talk|url }}">{{ talk.title }}</a></td>
+                    {% set author = site.query('/speakers').filter(F._id == talk.author).first() %}
+                    <td><a href="{{ author|url }}">{{ author.name }}</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+{% endfor %}
+</div>

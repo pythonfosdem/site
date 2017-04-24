@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}Talks{% endblock %}
+
+{% block body %}
+    <div class="row">
+	<ul class="list-unstyled">
+            {% for child in this.children %}
+		<li><a href="{{ child|url }}">{{ child.name }}</a></li>
+            {% endfor %}
+	</ul>
+    </div>
+{% endblock %}

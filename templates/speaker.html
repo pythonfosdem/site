@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+	<div class="row">
+        <h1 class="text-center">{{ this.name }}</h1>
+	</div>
+    <div class="row">
+        <ul class="list-unstyled">
+            {% for talk in site.query('/talks').filter(F.author == this._id) %}
+            <li><a href="{{ talk|url }}">{{ talk.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

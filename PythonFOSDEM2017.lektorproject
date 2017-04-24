@@ -1,0 +1,11 @@
+[project]
+name = PythonFOSDEM 2017
+cfp_start_date = 2016-10-19
+cfp_stop_date = 2016-12-18
+cfp_announce_talks = 2016-12-23
+
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://root@srv01/home/www/www.python-fosdem.org/src-2017

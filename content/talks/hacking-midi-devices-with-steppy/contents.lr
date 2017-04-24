@@ -1,0 +1,27 @@
+title: Hacking midi devices with StepPy
+---
+date: 2017-02-05 11:00:00
+---
+abstract:
+
+If you're making electronic music in 2017, you're likely to have seen or used one of Native Instrument's "Maschine", "Maschine Jam", Novation's "Circuit", or Ableton's "Push"...
+These pad-based devices allow musicians to trigger samples, and create rhythms intuitively by the means of a "step sequencer".
+The said step sequencer is implemented in the box and stays in it...
+
+Thanks to "mido" and "portmidi" libraries, I designed a lightweight open source software sequencer (without a GUI), exposing abstractions for python programmers to use their existing MIDI-enabled hardware. My MiniNova, Launch Control and Quneo devices were hacked this way to create new functionality together.
+
+The talk starts with a quick explanation of MIDI and step sequencing, then describes the benefits and challenges of using Python in this context, as well as the choice of gevent against other async frameworks. It ends of course with a live demo!
+---
+description:
+
+
+---
+subtitle: a step sequencer in Python
+---
+room: ud2120
+---
+author: yann-gravrand
+---
+day: 2017-02-05
+---
+hour: 11:00

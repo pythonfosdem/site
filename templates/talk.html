@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+    {% set author = site.query('/speakers').filter(F._id == this.author).first() %}
+    <div class="row">
+        <h2>{{ this.title }} by <a href="{{ author|url }}">{{ author.name }}</a></h2>
+    </div>
+    <div class="row">
+        <h3>{{ this.subtitle }}</h3>
+        {% if this.abstract %}
+        <h3>Abstract</h3>
+        <p>{{ this.abstract }}</p>
+        {% endif %}
+        {% if this.description %}
+        <h3>Description</h3>
+        <p>{{ this.description }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,82 @@
+title: The power of duck typing and linear algrebra 
+---
+date: 2017-02-04 11:30:00
+---
+abstract:
+
+Algebraic operator are every where in python. + = * / 
+Dict are every where in python. 
+
+What can we achieve by combining both of them? 
+
+A self taught mad scientist tried for you and the results are pretty impressive
+---
+description:
+
+Introduction
+
+Algebra is a wonderful abstraction that make the infamous 2D point example of a class or nameddict useless when you have complex data type (that is HW accelerated on Intel CPU). 
+
+
+I Algebra 101 : it is all about consistency between symbol and behaviour
+
+Simple: Is something consistent with linear algebra?
+it requires 17 simple unit tests suffice to say so
+
+So just let makes a test this rules are followed, and then a class that applies these behaviours and we have implemented it.
+
+II I have linear algebra behaviour. How useful can it e? 
+
+Well, you have basic data type like { x: 1, y :2, z :3 } that is actually behaving like an euclidean vector.
+
+If an object is a MutableMapping thus we can create a universal operator for saying how  much an object «looks like» another one.
+Practical use : 
+- finding doublons in database;
+- text matching (after a pass of ntlk + word counters);
+- pattern fitting;
+...
+
+That is the basis of Textual indexation and profiling (it is not only for evil purpose)
+https://github.com/jul/ADictAdd_iction/blob/master/example/cos_demo.py
+
+
+III State of the art of 2 working POC how to use MutableMapping (dict) and super
+
+Most of the operation tested here
+https://github.com/jul/ADictAdd_iction/
+
+Implementation as a trait here
+https://github.com/jul/archery
+
+Basically it works BUT : 
+
+1) it is hard : with archery I stumbled on super
+2) with VectorDict (obsolete) it lacks of genericity and the code is clumsy
+3) python 2 div behaviour was screwing this (and since these library were relying on base operator, I got biten)
+
+Prepare to throw 2 away
+
+IV the future
+
+Maybe proposing a PEP :) because consistent behaviour of operators cand be a great idea (see PEP on matrix multiplication)
+
+
+A chain is as strong as its weakest link : if a lib is based on composing the python based operator, the algebra will be as consistent as the CORE behaviour of the operator in the language. 
+
+Conclusion
+
+Algebra is a powerful abstraction that is still underused.
+
+Possible development :
+- Rieman/Hermitian algebra: using the power of the math used in Quantum Mechanics/relativity and python in the same fashion
+- Using Quaternion to have quirkless rotation in euclidean 3D...
+---
+subtitle: How linear algebra and python make a good fit
+---
+room: h1308
+---
+author: julien-tayon
+---
+day: 2017-02-04
+---
+hour: 11:30

@@ -1,0 +1,29 @@
+title: GrimoireLab
+---
+date: 2017-02-05 11:30:00
+---
+abstract:
+
+The talk will explain how to analyze software development repositories of common use in the free software community with [GrimoireLab tools][http://grimoirelab.github.io], a toolset for software development analytics writting in Python. It will start by explaining how to retrieve data from git, Bugzilla, GitHub, mailing lists, StackOverflow, Gerrit, and many other repositories by, and organizing it in a database. The talk will later explain how this database can be exploited with several components of the toolset, for different purposes. In this context, special attention will be given to how to extract useful information from it using Python/Pandas and iPython/Jupyter Notebooks; and how to use ElasticSearch/Kibana to deploy actionable dashboards that show data in all its glory.
+---
+description:
+
+Many free / open source software (FOSS) projects feature an open development model, with public software development repositories which anyone can browse. These repositories are normally used to find specific information, such a certain commit or a particular bug report. But they can also be mined to extract all relevant data, so that it can be analyzed later to learn about any specific or general aspect of the project. This talk will explain the GrimoireLab method for doing that, which is based on organizing all that information in a database, which can be later analyzed. This approach allows for minimal impact on the project infrastructure, since data is retrieved only once, even if it later analyzed many times. It allows as well for efficiency and comfort when mining data for an analysis, since the results are readily available, databases can be shared and replicated at will, and queried them with any kind of tools is easy.
+
+The tools that retrieve information from the repositories are grouped in the GrimoireLab toolset. It includes mature, widely tested programs capable of extracting information from most repositories used by FOSS projects of any scale. Many of them are agnostic with respect to the database used, although currently ElasticSearch is the best supported.
+
+The produced databases can be exploited in several ways, of which two will be explained during the talk: using Python/Pandas to produce iPython/Jupyter Notebooks which analyze some aspect of the project; and using Python to feed a ElasticSearch cluster, with a Kibana front-end for visualizing in a flexible, powerful dashboard.
+
+All these approaches can be used to understand general aspects of the project, such as how efficient are the code review or bug fixing processes, how diverse are contributions to the git repository, or how conversations in mailing lists or StackOverflow are shaped. But they can be used as well to drill down, and analyze the contributions by a certain developer, or the longer code review processes, or the contents of the most lively email and QA threads.
+
+The talk will explain the whole process from data retrieval to visualization, and will show some specific cases of real world use, such as the dashboards produced for Eclipse, OPNFV, MediaWiki and many others. Some of the contents of the talk are described in detail in the online book GrimoireLab Training.
+---
+subtitle: a Python toolset for software development analytics
+---
+room: ud2120
+---
+author: jesus-m-gonzalez-barahona
+---
+day: 2017-02-05
+---
+hour: 11:30
