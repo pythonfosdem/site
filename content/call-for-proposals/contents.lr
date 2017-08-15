@@ -1,6 +1,6 @@
 _model: page
 ---
-title: 
+title:
 ---
 body:
 
@@ -11,20 +11,20 @@ content:
 
 ## Call For Proposals is OPEN !!!
 
-This is the official call for sessions for the Python devroom at [FOSDEM 2017](https://fosdem.org/2017).
+This is the official call for sessions for the Python devroom at [FOSDEM 2018](https://fosdem.org/2018).
 
 FOSDEM is the Free and Open source Software Developers' European Meeting, a free and non-commercial two-day week-end that offers open source contributors a place to meet, share ideas and collaborate.
 
-It's the biggest event in Europe with **+5000** hackers, **+400** speakers.
+It's the biggest event in Europe with **+8000** hackers, **+645** speakers.
 
 For this edition, Python will be represented by its Community.
 If you want to discuss with a lot of Python Users, it's the place to be!
 
 # Important dates
 
-* Start of Call For Proposals: **October 19, 2016**
-* Submission deadlines: **December 18, 2016**
-* Acceptance notifications: **December 23, 2016**
+* Start of Call For Proposals: **October 1st, 2017**
+* Submission deadlines: **November 15th, 2017**
+* Acceptance notifications: **November 30th, 2017**
 
 # Practical
 
@@ -34,7 +34,7 @@ If you want to discuss with a lot of Python Users, it's the place to be!
 
 # How to submit
 
-All submissions are made in the [Pentabarf event planning tool](https://penta.fosdem.org/submission/FOSDEM17)
+All submissions are made in the [Pentabarf event planning tool](https://penta.fosdem.org/submission/FOSDEM18)
 
 When submitting your talk in Pentabarf, make sure to select the Python devroom as the Track.
 
@@ -47,3 +47,5 @@ Any questions, please send an email to info AT python-fosdem DOT org
 Thank you for submitting your sessions and see you soon in **Brussels** to talk about Python.
 
 If you want to keep informed for this edition, you can follow our twitter account [@PythonFOSDEM](https://twitter.com/PythonFOSDEM).
+---
+_hidden: yes

@@ -1,8 +1,23 @@
 _template: index.html
 ---
-title: PythonFOSDEM 2017
+title: PythonFOSDEM 2018
 ---
 body:
+
+#### md-section ####
+title: Warning
+----
+content:
+
+PythonFOSDEM 2017 was really awesome, we have provided 24 slots with awesome speakers and talks.
+
+But...
+
+We are in August and the FOSDEM 2018 is not yet announced, normally we will have some news in September but the site is already available for your pleasure.
+
+Once FOSDEM is announced, we will ask for a room for the Python devroom, we hope we could have a positive feedback from the organizers.
+
+Keep in touch and long live to [Python](http://www.python.org).
 
 #### md-section ####
 title: Welcome
@@ -13,7 +28,7 @@ content:
 
 This developer room is a good occasion to discover the Python ecosystem and meet the community around this language.
 
-For this edition, we will follow the same [Code of Conduct](https://www.python.org/psf/codeofconduct/) of the [Python Software Foundation](https://www.python.org/psf).
+For this edition, we will follow the same [Code of Conduct](https://www.python.org/psf/codeofconduct/) of the [Python Software Foundation](https://www.python.org/psf
 #### location ####
 title: Location
 ----
@@ -31,7 +46,5 @@ Belgium
 latitude: 50.814705
 ----
 longitude: 4.381739
-#### schedule ####
-title: Schedule
 ---
 show_title: yes
