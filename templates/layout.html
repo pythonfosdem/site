@@ -28,7 +28,7 @@
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		<ul class="nav navbar-nav">
-		    {% for path, label in bag('menu').iteritems() %}
+		    {% for path, label in bag('menu').items() %}
 			<li><a href="{{ path|url }}">{{ label }}</a></li>
                     {% endfor %}
 		    <li><a href="http://blog.python-fosdem.org/">Blog</a></li>
