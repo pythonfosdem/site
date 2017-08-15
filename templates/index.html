@@ -9,6 +9,8 @@
         {% for item in this.body.blocks %}
             {{ item }}
         {% endfor %}
+
+        {% if site.query('/sponsors').count() %}
         <div class="row">
             <h1 class="page-header">Sponsors</h1>
         </div>
@@ -28,4 +30,5 @@
             {% endfor %}
             </div>
         </div>
+        {% endif %}
 {% endblock %}
