@@ -9,43 +9,113 @@ title: Call for Proposals
 ----
 content:
 
-## Call For Proposals is OPEN !!!
+We are happy to announce that we will be running a Python devroom again at FOSDEM 2019,
+hosted in Brussels, Belgium. This year’s edition will take place on the 2nd and 3rd of February,
+with the Python devroom being available on Sunday. 
 
-This is the official call for sessions for the Python devroom at [FOSDEM 2019](https://fosdem.org/2019).
+If you have not heard about FOSDEM before or are looking for more information, 
+you can visit the official website at [www.fosdem.org](https://www.fosdem.org).
 
-FOSDEM is the Free and Open source Software Developers' European Meeting, a free and non-commercial two-day week-end that offers open source contributors a place to meet, share ideas and collaborate.
+As per usual, we are looking for multiple Pythonistas to help us shape the devroom schedule.
+We are now open for receiving your proposals! With over 8000 participants, FOSDEM is the perfect
+place to share your story and meet fellow Python enthusiasts.  
 
-It's the biggest event in Europe with **+8000** hackers, **+645** speakers.
+You can check the Python-FOSDEM website (https://www.python-fosdem.org)
+or the Belgium Python mailing list (https://mail.python.org/mailman/listinfo/belgium) to stay updated.
 
-For this edition, Python will be represented by its Community.
-If you want to discuss with a lot of Python Users, it's the place to be!
+Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2019!
 
-# Important dates
+## About FOSDEM
+Official website: https://fosdem.org/2019/
 
-* Start of Call For Proposals: **October 2nd, 2017**
-* Submission deadlines: **November 5th, 2017**
-* Acceptance notifications: **November 19th, 2017**
+FOSDEM is a free and non-commercial event organised by the community for the community. 
+The goal is to provide free and open source software developers and communities a place to meet to:
 
-# Practical
+- get in touch with other developers and projects;
+- be informed about the latest developments in the free software world;
+- be informed about the latest developments in the open source world;
+- attend interesting talks and presentations on various topics by project leaders and committers;
+- to promote the development and benefits of free software and open source solutions.
 
-* The duration for talks will be 30 minutes, including presentations and questions and answers.
-* Presentation can be recorded and streamed, sending your proposal implies giving permission to be recorded.
-* A mailing list for the Python devroom is available for discussions about devroom organisation. You can [register](https://lists.fosdem.org/listinfo/python-devroom) here.
+Participation and attendance is totally free, though the organisers gratefully accept donations and sponsorship.
 
-# How to submit
+## Essential Information
 
-All submissions are made in the [Pentabarf event planning tool](https://penta.fosdem.org/submission/FOSDEM18)
+The devroom will be held on 03/02/2019, running from 9AM to 5PM
+Submission link: https://penta.fosdem.org/submission/FOSDEM19
+Talk format: 20min of content + 5min of questions
 
-When submitting your talk in Pentabarf, make sure to select the Python devroom as the Track.
+If you have submitted for previous FOSDEM editions, remember to use your already existing account on Pentabarf.
 
-Of course, if you already have a user account, please reuse it.
+Financial aid can be requested to FOSDEM organizers for presenters traveling from outside Europe.
 
-# Questions
+## Submission Guidelines
+If you would like to give a talk, present a project or show off some coding skills,
+we are looking forward to receiving your application. 
 
-Any questions, please send an email to info AT python-fosdem DOT org
+Submission platform: https://penta.fosdem.org/submission/FOSDEM19
+Deadline: 01/12/2018
+Announcement of selected talks: 15/12/2018
+The sooner we can start planning a draft schedule the better, so please submit your application ASAP.
 
-Thank you for submitting your sessions and see you soon in **Brussels** to talk about Python.
+Be sure to properly fill your Pentabarf profile (Person) with:
+- your name
+- a short speaker bio
+- your contact information (for the organizers)
+
+Then submit your talk (or event)
+- title and subtitle of the presentation
+- presentation description
+- other relevant details (other publications, video of previous talks, ...)
+
+Keep in mind presentations must be related to Python. 
+Next to this, all presentations will be streamed live under the FOSDEM content licence 
+and presented on the hallway screens in case the room is full. Captured footage will 
+later be shared online using the FOSDEM archives. By submitting you also agree to these terms.
+
+## List of desirable topics
+We'd like to have a devroom as diverse as possible, so we are looking to offer a mixture of presentations,
+tutorials, demos, live coding, discussions, etc.
+Aside from the usual talks about free and open source, we will also gladly welcome talks about:
+
+- How to get started with library/framework X
+- Best practices for new Python developers
+- Return on experience with library/framework X
+- Local Python communities & diversity
+- How Python is being used for education
+- Hardware / Infrastructure
+- Security tools and securing Python
+- Data science
+
+## Pentabarf Notes
+If you ever find yourself in doubt: 
+- "talks" are named "events" in Pentabarf
+- Track must be "Python devroom"
+- Duration must be "00:25:00"
+- Event type must be "Lecture"
+- Abstract is the text that goes in the FOSDEM booklet
+
+## Social Event
+Every year, we have the tradition to crash somewhere to eat and drink while discussing Python things. 
+This year we will try to book for the event well in advance, more details will follow on the mailing list and the website.
+
+## Volunteers
+We will also call for volunteers to help us run the event and help us with the devroom operation. 
+You can get in touch with the organizers on the Python-Belgium mailing list (https://mail.python.org/mailman/listinfo/belgium)
+
+## Organizers
+You can reach out directly to the organizers if you have a specific request or question:  
+- Eric Gazoni: eric@adimian.com
+- Jens Roelant: jens@adimian.com
+
+## Useful Links
+- https://mail.python.org/mailman/listinfo/belgium
+- https://www.python-fosdem.org/
+- https://fosdem.org/2019/
+- http://python.be/
+- https://www.python.org/psf/
+- https://www.meetup.com/nl-NL/Belgium-Python-Meetup-aka-AperoPythonBe/
 
 If you want to keep informed for this edition, you can follow our twitter account [@PythonFOSDEM](https://twitter.com/PythonFOSDEM).
 ---
-_hidden: yes
+_hidden: no
