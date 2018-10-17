@@ -14,7 +14,7 @@ pages:
   script:
     - pip install lektor
     - lektor build --output-path public
-    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ root@wirtel.be:/home/www/www.python-fosdem.org/src/
+    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ root@vhost.wirtel.be:/home/www/www.python-fosdem.org/src/
   artifacts:
     paths:
       - public
