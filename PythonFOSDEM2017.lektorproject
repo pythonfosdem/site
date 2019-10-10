@@ -1,5 +1,5 @@
 [project]
-name = PythonFOSDEM 2019
+name = PythonFOSDEM 2020
 
 [servers.production]
 name = Production

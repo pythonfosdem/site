@@ -1,6 +1,6 @@
 _template: index.html
 ---
-title: PythonFOSDEM 2019
+title: PythonFOSDEM 2020
 ---
 body:
 
@@ -9,7 +9,7 @@ title: Warning
 ----
 content:
 
-The Call for Proposals for the PythonFOSDEM 2019 is open, please read the Call for Proposals section on the site
+The Call for Proposals for the PythonFOSDEM 2020 is open, please read the Call for Proposals section on the site
 
 #### md-section ####
 title: Welcome
@@ -21,6 +21,7 @@ content:
 This developer room is a good occasion to discover the Python ecosystem and meet the community around this language.
 
 For this edition, we will follow the same [Code of Conduct](https://www.python.org/psf/codeofconduct/) of the [Python Software Foundation](https://www.python.org/psf)
+
 #### location ####
 title: Location
 ----
