@@ -1,22 +1,34 @@
-image: python:3.7
+stages:
+  - build
+  - deploy
 
-before_script:
-  - apt-get update
-  - apt-get install openssh-client rsync -y
-  - eval $(ssh-agent -s)
-  - ssh-add <(echo "$SSH_PRIVATE_KEY")
-  - mkdir -p ~/.ssh
-  - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
-  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
-pages:
+build:
+  stage: build
+  image: python:3.8-alpine
   script:
     - pip install -r requirements.txt
     - lektor build --output-path public
-    - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ root@vhost.wirtel.be:/home/www/www.python-fosdem.org/src/
   artifacts:
     paths:
-      - public
+      - public/
+    expire_in: 1h
+
+deploy:
+  stage: deploy
+  image: alpine:3.9
+
+  variables:
+    SSH_HOST: vhost.wirtel.be
+    SSH_USER: root
+    SSH_PATH: /home/www/www.python-fosdem.org/src/
+
+  script:
+    - apk add rsync openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -hrvz --chown=www-data:www-data --delete --exclude=_ -e 'ssh -i id_rsa' public/ ${SSH_USER}@${SSH_HOST}:${SSH_PATH}
   only:
     - master
-  
