@@ -2,9 +2,8 @@ image: python:3.7
 
 before_script:
   - apt-get update
-  - 'which ssh-agent || ( apt-get install openssh-client -y )'
+  - apt-get install openssh-client rsync -y
   - eval $(ssh-agent -s)
-  - apt-get install --yes --force-yes rsync
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
   - mkdir -p ~/.ssh
   - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
@@ -12,7 +11,7 @@ before_script:
 
 pages:
   script:
-    - pip install lektor
+    - pip install -r requirements.txt
     - lektor build --output-path public
     - rsync -hrvz --delete --exclude=_ -e 'ssh -i id_rsa' public/ root@vhost.wirtel.be:/home/www/www.python-fosdem.org/src/
   artifacts:
