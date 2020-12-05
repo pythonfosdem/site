@@ -9,9 +9,9 @@ title: Call for Proposals
 ----
 content:
 
-We are happy to announce that we will be running a Python devroom again at FOSDEM 2020,
-hosted in Brussels, Belgium. This year’s edition will take place on the 1st and
-2nd of February, with the Python devroom being available on Sunday.
+We are happy to announce that we will be running a Python devroom again at FOSDEM 2021,
+hosted in Brussels, Belgium. This year’s edition will take place on the 6th and
+7th of February, with the Python devroom being available on Sunday 7th.
 
 If you have not heard about FOSDEM before or are looking for more information, 
 you can visit the official website at [www.fosdem.org](https://www.fosdem.org).
@@ -20,13 +20,15 @@ As per usual, we are looking for multiple Pythonistas to help us shape the devro
 We are now open for receiving your proposals! With over 8000 participants, FOSDEM is the perfect
 place to share your story and meet fellow Python enthusiasts.  
 
-You can check the Python-FOSDEM website (https://www.python-fosdem.org)
-or the Belgium Python mailing list (https://mail.python.org/mailman/listinfo/belgium) to stay updated.
+You can check the [Python-FOSDEM website](https://www.python-fosdem.org)
+or the [Belgium Python mailing list](https://mail.python.org/mailman/listinfo/belgium) to stay updated.
 
-Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2020!
+Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2021!
 
 ## About FOSDEM
-Official website: https://fosdem.org/2020/
+* Official website: https://fosdem.org/2021/
+* FOSDEM Code of Conduct: https://fosdem.org/2021/practical/conduct/
+
 
 FOSDEM is a free and non-commercial event organised by the community for the community. 
 The goal is to provide free and open source software developers and communities a place to meet to:
@@ -41,23 +43,30 @@ Participation and attendance is totally free, though the organisers gratefully a
 
 ## Essential Information
 
-* The devroom will be held on 01/02/2020, running from 9AM to 5PM
-* Submission link: https://penta.fosdem.org/submission/FOSDEM20
-* Talk format: 20min of content + 5min of questions
+- The devroom will be held on 7th of February 2021, online
+- Submission link: https://penta.fosdem.org/submission/FOSDEM21
+- Talk format: 25min of content + 5min of questions
 
-If you have submitted for previous FOSDEM editions, remember to use your already existing account on Pentabarf.
+If you have submitted for previous FOSDEM editions, remember to use your already existing account on Pentabarf. Make sure to fill out 'person' details.  We need a name, photo and biography.
 
-Financial aid can be requested to FOSDEM organizers for presenters traveling from outside Europe.
+## New online rules
+
+- The reference time will be Brussels local lime (CET).
+- Talks must be pre-recorded in advance, and will be streamed during the event. This is a hard requirement from the FOSDEM organizers for which we can make no exception.
+- Q/A session will be live
+- A facility will be provided for attendees to chat between themselves
+- A facility will be provided for attendees to submit questions
 
 ## Submission Guidelines
+
 If you would like to give a talk, present a project or show off some coding skills,
 we are looking forward to receiving your application. 
 
-Submission platform: https://penta.fosdem.org/submission/FOSDEM20
+Submission platform: https://penta.fosdem.org/submission/FOSDEM21
 
-Deadline: 24/11/2019
+Deadline: 26th of December 2020
 
-Announcement of selected talks: 08/12/2019
+Announcement of selected talks: 31st of December 2020
 
 The sooner we can start planning a draft schedule the better, so please submit your application ASAP.
 
@@ -114,10 +123,9 @@ You can reach out directly to the organizers if you have a specific request or q
 ## Useful Links
 - https://mail.python.org/mailman/listinfo/belgium
 - https://www.python-fosdem.org/
-- https://fosdem.org/2020/
-- http://python.be/
+- https://fosdem.org/2021/
+- https://python.be/
 - https://www.python.org/psf/
-- https://www.meetup.com/nl-NL/Belgium-Python-Meetup-aka-AperoPythonBe/
 
 If you want to keep informed for this edition, you can follow our twitter account [@PythonFOSDEM](https://twitter.com/PythonFOSDEM).
 ---
