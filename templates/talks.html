@@ -4,10 +4,28 @@
 
 {% block body %}
     <div class="row">
-	<ul class="list-unstyled">
-            {% for child in this.children %}
-		<li><a href="{{child|url}}">{{ child.title }}</a></li>
-            {% endfor %}
-	</ul>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Talk</th>
+                    <th>Speaker</th>
+                    <th>Start</th>
+                    <th>End</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for child in this.children %}
+                <tr>
+                    {% set author = site.query('/speakers').filter(F._id == child.author).first() %}
+                    <td><a href="{{child|url}}">{{ child.title }}</a></td>
+                    <td>{{ author.name }}</td>
+                    <td>{{ child.start_at }}</td>
+                    <td>{{ child.stop_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <ul class="list-unstyled">
+        </ul>
     </div>
 {% endblock %}

@@ -1,0 +1,19 @@
+title: CubicWeb: bootstraping a web-application from RDF data
+---
+day: 2022-02-06
+---
+description:
+
+We made the Web accessible to human. We are making the web accessible to computers with Linked Open Data (LOD - https://www.w3.org/standards/semanticweb/data). More and more RDF data is created by people and institutions to contribute to the LOD. However, publishing this RDF data with content negotiation is rarely done, because there is no on-shelve solution. Moreover, there is no easy to use user interface to manage linked data (including CRUD operations, but also user permissions, rendering, etc.).
+
+CubicWeb is a SCMS (Semantic Content Management System) for Linked Open Data (https://forge.extranet.logilab.fr/cubicweb/cubicweb). This python-based framework can be used to import OWL schema and RDF data automatically to generate a new CubicWeb instance. This instance can be used out-of-the-box as a single application to serve RDF data through a conventional web interface for browsing and through content negotiation for downloading. No need to configure anything, just import and launch the app. The CubicWeb framework implements an administration interface to manage data easily even for non-technical people. All the common features of a web application framework are available.
+---
+duration: 25
+---
+hour: 17:00
+---
+author: fabien-amarger
+---
+start_at: 17:00
+---
+stop_at: 17:55

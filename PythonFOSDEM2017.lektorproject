@@ -1,8 +1,9 @@
 [project]
 name = PythonFOSDEM 2022
+date = 06/02/2022
+github_repo = https://github.com/pythonfosdem/site
+twitter_url = https://twitter.com/pythonfosdem
 
-[servers.production]
-name = Production
-enabled = yes
-default = yes
-target = rsync://root@srv01/home/www/www.python-fosdem.org/src-2018
+cfp_start_date = 2021-12-01
+cfp_stop_date = 2021-12-24
+cfp_announce_talks = 2021-12-31

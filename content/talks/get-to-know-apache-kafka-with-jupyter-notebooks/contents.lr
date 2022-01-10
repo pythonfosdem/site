@@ -1,0 +1,19 @@
+title: Get to know Apache Kafka with Jupyter Notebooks
+---
+day: 2022-02-06
+---
+description:
+
+Apache Kafka is recognised as the best data streaming platform around, but it can be difficult to observe what is happening when you are just getting started with this excellent technology platform. In this session, you will get a tour of key Kafka features using the delightful web UI of Jupyter notebooks.
+
+Use the notebooks to see Kafka and Python in action, producing and consuming records. We’ll also cover how to get the best from your application by making good use of topic partitioning and consumer groups. From high-level concepts to nitty-gritty details, this session will equip you with the skills you need to build applications with Kafka. Recommended for anyone curious about Apache Kafka or using Jupyter to work with or learn new data platforms.
+---
+hour: 10:00
+---
+duration: 30
+---
+author: francesco-tisiot
+---
+start_at: 10:00
+---
+stop_at: 10:30
