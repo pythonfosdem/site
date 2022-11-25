@@ -1,6 +1,6 @@
 _model: page
 ---
-title:
+title: Call for Proposals
 ---
 body:
 
@@ -9,9 +9,9 @@ title: Call for Proposals
 ----
 content:
 
-We are happy to announce that we will be running a Python devroom again at FOSDEM 2022,
-hosted in Brussels, Belgium. This year’s edition will take place on the 5th and
-6th of February, with the Python devroom being available on Saturday 6th.
+We are happy to announce that we will be running a Python devroom again at FOSDEM 2023,
+hosted in Brussels, Belgium. This year’s edition will take place on the 4th and
+5th of February, with the Python devroom being available on Saturday 5th.
 
 If you have not heard about FOSDEM before or are looking for more information, 
 you can visit the official website at [www.fosdem.org](https://www.fosdem.org).
@@ -26,8 +26,8 @@ or the [Belgium Python mailing list](https://mail.python.org/mailman/listinfo/be
 Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2022!
 
 ## About FOSDEM
-* Official website: https://fosdem.org/2022/
-* FOSDEM Code of Conduct: https://fosdem.org/2022/practical/conduct/
+* Official website: https://fosdem.org/2023/
+* FOSDEM Code of Conduct: https://fosdem.org/2023/practical/conduct/
 
 
 FOSDEM is a free and non-commercial event organised by the community for the community. 
@@ -43,30 +43,21 @@ Participation and attendance is totally free, though the organisers gratefully a
 
 ## Essential Information
 
-- The devroom will be held on 6th of February 2022, online
-- Submission link: https://penta.fosdem.org/submission/FOSDEM22
-- Talk format: 25min of content + 5min of questions
-
+- The devroom will be held on 6th of February 2023, online
+- Submission link: https://penta.fosdem.org/submission/FOSDEM23
+- Talk format: between 15min and 30min of presentation, please do not plan for Q&A (we will do the padding once the schedule is completed)
 If you have submitted for previous FOSDEM editions, remember to use your already existing account on Pentabarf. Make sure to fill out 'person' details.  We need a name, photo and biography.
-
-## New online rules
-
 - The reference time will be Brussels local lime (CET).
-- Talks must be pre-recorded in advance, and will be streamed during the event. This is a hard requirement from the FOSDEM organizers for which we can make no exception.
-- Q/A session will be live
-- A facility will be provided for attendees to chat between themselves
-- A facility will be provided for attendees to submit questions
+- Talks must be given in person, so be sure you can travel to Brussels.
 
 ## Submission Guidelines
 
 If you would like to give a talk, present a project or show off some coding skills,
 we are looking forward to receiving your application. 
 
-Submission platform: https://penta.fosdem.org/submission/FOSDEM22
-
-Deadline: 24th of December 2021
-
-Announcement of selected talks: 31st of December 2021
+Submission platform: https://penta.fosdem.org/submission/FOSDEM23
+Deadline: 10th of December 2022
+Announcement of selected talks: 15th of December 2022
 
 The sooner we can start planning a draft schedule the better, so please submit your application ASAP.
 
@@ -80,10 +71,10 @@ Then submit your talk (or event)
 - presentation description
 - other relevant details (other publications, video of previous talks, ...)
 
-Keep in mind presentations must be related to Python. 
-Next to this, all presentations will be streamed live under the FOSDEM content licence 
-and presented on the hallway screens in case the room is full. Captured footage will 
-later be shared online using the FOSDEM archives. By submitting you also agree to these terms.
+Keep in mind presentations must be related to Python. All presentations will be
+streamed live under the FOSDEM content licence. Captured footage will later be
+shared online using the FOSDEM archives. By submitting you also agree to these
+terms.
 
 ## List of desirable topics
 We'd like to have a devroom as diverse as possible, so we are looking to offer a mixture of presentations,
@@ -97,13 +88,15 @@ Aside from the usual talks about free and open source, we will also gladly welco
 - How Python is being used for education
 - Hardware / Infrastructure
 - Security tools and securing Python
-- Data science
+- Data science, AI, Machine Learning
+- Video Games (or game-related tooling) written in Python
+- MicroPython, CircuitPython, embedded software
 
 ## Pentabarf Notes
 If you ever find yourself in doubt: 
 - "talks" are named "events" in Pentabarf
 - Track must be "Python devroom"
-- Duration must be "00:25:00"
+- Duration must be between "00:15:00" and "00:30:00"
 - Event type must be "Lecture"
 - Abstract is the text that goes in the FOSDEM booklet
 
@@ -119,10 +112,12 @@ You can reach out directly to the organizers if you have a specific request or q
 ## Useful Links
 - https://mail.python.org/mailman/listinfo/belgium
 - https://www.python-fosdem.org/
-- https://fosdem.org/2022/
+- https://fosdem.org/2023/
 - https://python.be/
 - https://www.python.org/psf/
 
 If you want to keep informed for this edition, you can follow our twitter account [@PythonFOSDEM](https://twitter.com/PythonFOSDEM).
 ---
-_hidden: yes
+_hidden: no
+---
+_discoverable: no
