@@ -1,0 +1,34 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  serve:
+    desc: Serve the site
+    cmds:
+      - lektor serve --verbose --prune
+
+  build:
+    desc: Build the site
+    cmds:
+      - lektor build --verbose --prune
+
+  clean:
+    desc: Clean the artifcats of the site
+    cmds:
+      - lektor clean --yes
+
+  dependencies:install:
+    desc: Install the dependencies
+    cmds:
+      - pip install -r requirements.txt pip-tools
+
+  dependencies:build:
+    desc: Build the dependencies via pip-tools
+    cmds:
+      - pip-compile requirements.in --output-file requirements.txt
+
+  dependencies:update:
+    desc: Update the dependencies via pip-tools
+    cmds:
+      - pip-compile --upgrade requirements.in --output-file requirements.txt
