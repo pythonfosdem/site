@@ -1,9 +1,9 @@
 [project]
-name = PythonFOSDEM 2024
-date = 04/02/2022
+name = PythonFOSDEM 2025
+date = 02/02/2025
 github_repo = https://github.com/pythonfosdem/site
 twitter_url = https://twitter.com/pythonfosdem
 
 cfp_start_date = 2023-11-20
-cfp_stop_date = 2023-12-01
+cfp_stop_date = 2024-12-01
 cfp_announce_talks = 2023-12-15

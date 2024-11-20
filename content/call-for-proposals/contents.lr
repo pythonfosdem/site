@@ -11,106 +11,81 @@ content:
 
 ## Call for Participation
 
-We are happy to announce that we will be running a Python devroom again
-at FOSDEM 2024.
-This year's edition will be exclusively in-person, and take place on the
-3rd and 4th of February, with the Python devroom being available on Sunday
-4th.
-If you have not heard about FOSDEM before or are looking for more
-information, you can visit the official website at [www.fosdem.org](
-http://www.fosdem.org/).
-As per usual, we are looking for multiple Pythonistas to help us shape the
-devroom schedule. We are now open to receiving your proposals! With over
-8000 participants, FOSDEM is the perfect place to share your story and meet
-fellow Python enthusiasts.
-Good luck to everyone applying. We’re looking forward to meeting you all
-at FOSDEM 2024!
+We are happy to announce that we will again be running a **Python devroom at FOSDEM 2025**.
+
+The next edition of FOSDEM will take place on February 1 and 2 2025, with the Python devroom being held on Sunday, February 2.
+
+If you haven’t heard about FOSDEM before or are looking for more information, you can visit the official website at https://www.fosdem.org/.
+
+As usual, we are looking for multiple Pythonistas to help us shape the devroom schedule. We are now open to receiving your proposals ! With over 8500 participants, FOSDEM is the perfect place to share your story and meet fellow Python enthusiasts.
+
+Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2025 !
 
 ## About FOSDEM
 
-- Official website: [https://fosdem.org/2024/](https://fosdem.org/2024/)
-- FOSDEM Code of Conduct: [
-https://fosdem.org/2024/practical/conduct/](https://fosdem.org/2024/practical/conduct/)
+- [Official FOSDEM 2025 website](https://fosdem.org/2025/)
+- [FOSDEM Code of Conduct](https://fosdem.org/2025/practical/conduct/)
 
+FOSDEM is a free and non-commercial event organized by the community for the community. 
 
-FOSDEM is a free and non-commercial event organized by the community for
-the community. The goal is to provide free and open source software
-developers and communities a place to meet to:
+The goal is to provide free and open source software developers and communities a place to meet to:
+
 - get in touch with other developers and projects;
 - be informed about the latest developments in the free software world;
 - be informed about the latest developments in the open source world;
-- attend interesting talks and presentations on various topics by project
-leaders and committers;
-- to promote the development and benefits of free software and open source
-solutions.
+- attend interesting talks and presentations on various topics by project leaders and contributors;
+- to promote the development and benefits of free software and open source solutions.
 
-Participation and attendance is totally free, though the organizers
-gratefully accept donations and sponsorship.
+Participation and attendance is totally free, though the organizers gratefully accept donations and sponsorship.
 
 ## Essential Information
 
-- The devroom will be held on 4th of February 2024
-- Submission deadline: 1st of December 2024
-- Announcement of selected talks: 15th of December 2024
-- There will be no extension of the deadline
-- The reference time will be Brussels local lime (CET).
-- Talk format: 25min of presentation, please do not plan for Q&A (we will
-do the padding once the schedule is completed)
+The Python devroom will be held on February 2 2025, from 09:00 until 17:00 CET.
 
+- **Submission deadline: December 1 2025**
+- There will be no extension of the deadline
+- Announcement of selected talks: December 15 2025
+- The reference time is Brussels local lime (CET).
+- Talk format: 25 minutes presentation, including Q&A, if any. In-person only.
+- Live streaming of the talks will be available.
 
 ## Speaker Guidelines
 
-- Submission link: [https://fosdem.org/submit](https://fosdem.org/submit)
-- Pretalx is a new system, if you already had a pentabarf account you will
-not be able to re-use it and will need to create a Pretalx account
-- In the Submission notes field, please also confirm that if your talk is
-accepted, you will be able to attend FOSDEM and deliver your presentation.
-We will not consider proposals from prospective speakers who are unsure
-whether they will be able to secure funds for travel and lodging to attend
-FOSDEM. (Sadly, we are not able to offer travel funding for prospective
-speakers.)
-- You will need to select the "Python Devroom" track
-- Keep in mind presentations must be related to Python. All presentations
-will be recorded under the FOSDEM content licence. Captured footage will
-later be shared online using the FOSDEM archives. By submitting you also
-agree to these terms.
+Please submit your talk proposals using the [CFP submission page](https://pretalx.fosdem.org/fosdem-2025/cfp).
 
-## List of desirable topics
+- FOSDEM is using a self-hosted Pretalx installation for managing talk submissions. You will need to create an account, if you don’t already have one.
+- In the Submission notes field, please also confirm that if your talk is accepted, you will be able to attend FOSDEM and deliver your presentation. We will not consider proposals from prospective speakers who are unsure whether they will be able to secure funds for travel and lodging to attend FOSDEM. Sadly, we are not able to offer travel funding for prospective speakers.
+- You will need to select the "**Python**" track
+- Keep in mind presentations must be related to Python. All presentations will be recorded and made available under the Creative Commons licenses CC-BY-SA or CC-BY. Captured footage will later be shared online using the FOSDEM archives. By submitting you also agree to these terms.
 
-We'd like to have a devroom as diverse as possible, so we are looking to
-offer a mixture of presentations, tutorials, demos, live coding, etc. Aside
-from the usual talks about free and open source, we will also gladly
-welcome talks about:
-- How to get started with library/framework X
-- Best practices for new Python developers
-- Return on experience with library/framework X
-- Local Python communities & diversity
+## List of Desirable Topics
+
+We'd like to make the devroom topics as diverse as possible, so we are looking to offer a mixture of presentations, short tutorials, demos, live coding, etc. Aside from the usual talks about free and open source, we will also gladly welcome talks about e.g.
+
+- Best practices for Python developers
+- New developments in Python land
+- How to get started with a specific library/framework
+- Launching and growing Python communities
 - How Python is being used for education
-- Hardware / Infrastructure
+- Python for Hardware / Infrastructure
 - Security tools in Python and securing Python
-- Data science, AI, Machine Learning
+- Data science, AI and Machine Learning
+- Data engineering and management
 - Video Games (or game-related tooling) written in Python
 - MicroPython, CircuitPython, embedded software
+- Scaling Python applications
 
 ## Volunteers
 
-We will also call for volunteers to help us run the event and help us with
-the online devroom operation. You can get in touch with the organizers on
-the Python-Belgium mailing list ([
-https://mail.python.org/mailman/listinfo/belgium](https://mail.python.org/mailman/listinfo/belgium)).
-
+We will also call for volunteers to help us run the event and help us with the devroom operation. Please email the organizers, in case you are interested.
 
 ## Organizers
 
-You can reach out directly to the organizers if you have a specific request
-or question:
-- Eric Gazoni ([eric at adimian.com](mailto:eric at adimian.com))
-- Marc-Andre Lemburg ([mal at egenix.com](mailto:mal at egenix.com))
+You can reach out directly to the organizers, if you have a specific request or question:
 
-## Useful Links
-
-- [https://fosdem.org/2024/](https://fosdem.org/2024/)
-- [https://www.python.org/psf/](https://www.python.org/psf/)
+- Marc-André Lemburg: mal+fosdem [at] egenix.com 
+- Rosie Wood: rwood [at] turing.ac.uk
+- Ludo
 
 ---
 _hidden: no
