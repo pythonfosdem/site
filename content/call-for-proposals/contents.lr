@@ -11,20 +11,20 @@ content:
 
 ## Call for Participation
 
-We are happy to announce that we will again be running a **Python devroom at FOSDEM 2025**.
+We are happy to announce that we will again be running a **Python devroom at FOSDEM 2026**.
 
-The next edition of FOSDEM will take place on February 1 and 2 2025, with the Python devroom being held on Sunday, February 2.
+The next edition of FOSDEM will take place on January 31 and February 1 2026, with the Python devroom currently scheduled for Saturday, January 31, in the afternoon.
 
 If you haven’t heard about FOSDEM before or are looking for more information, you can visit the official website at https://www.fosdem.org/.
 
-As usual, we are looking for multiple Pythonistas to help us shape the devroom schedule. We are now open to receiving your proposals ! With over 8500 participants, FOSDEM is the perfect place to share your story and meet fellow Python enthusiasts.
+As usual, we are looking for multiple Pythonistas to help us shape the devroom schedule. We are now open to receiving your proposals! With over 8500 participants, FOSDEM is the perfect place to share your story and meet fellow Python enthusiasts.
 
-Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2025 !
+Good luck to everyone applying. We’re looking forward to meeting you all at FOSDEM 2026!
 
 ## About FOSDEM
 
-- [Official FOSDEM 2025 website](https://fosdem.org/2025/)
-- [FOSDEM Code of Conduct](https://fosdem.org/2025/practical/conduct/)
+- [Official FOSDEM 2026 website](https://fosdem.org/2026/)
+- [FOSDEM Code of Conduct](https://fosdem.org/2026/practical/conduct/)
 
 FOSDEM is a free and non-commercial event organized by the community for the community. 
 
@@ -40,18 +40,18 @@ Participation and attendance is totally free, though the organizers gratefully a
 
 ## Essential Information
 
-The Python devroom will be held on February 2 2025, from 09:00 until 17:00 CET.
+The Python devroom is currently scheduled to be held on January 31 in the afternoon.
 
 - **Submission deadline: December 1 2025**
 - There will be no extension of the deadline
 - Announcement of selected talks: December 15 2025
-- The reference time is Brussels local lime (CET).
+- The reference time is Brussels local time (CET).
 - Talk format: 25 minutes presentation, including Q&A, if any. In-person only.
 - Live streaming of the talks will be available.
 
 ## Speaker Guidelines
 
-Please submit your talk proposals using the [CFP submission page](https://pretalx.fosdem.org/fosdem-2025/cfp).
+Please submit your talk proposals using the [CFP submission page](https://pretalx.fosdem.org/fosdem-2026/cfp).
 
 - FOSDEM is using a self-hosted Pretalx installation for managing talk submissions. You will need to create an account, if you don’t already have one.
 - In the Submission notes field, please also confirm that if your talk is accepted, you will be able to attend FOSDEM and deliver your presentation. We will not consider proposals from prospective speakers who are unsure whether they will be able to secure funds for travel and lodging to attend FOSDEM. Sadly, we are not able to offer travel funding for prospective speakers.
@@ -60,20 +60,27 @@ Please submit your talk proposals using the [CFP submission page](https://pretal
 
 ## List of Desirable Topics
 
-We'd like to make the devroom topics as diverse as possible, so we are looking to offer a mixture of presentations, short tutorials, demos, live coding, etc. Aside from the usual talks about free and open source, we will also gladly welcome talks about e.g.
+We’d like to make the devroom topics as diverse as possible, so we are looking to offer a mixture of presentations, short tutorials, demos, live coding, etc. This year, the python devroom will focus both on the language itself (new developments, tools and best practices) and its broader applications in education, data science and emerging fields. Examples of these include the following:
 
-- Best practices for Python developers
-- New developments in Python land
-- How to get started with a specific library/framework
-- Launching and growing Python communities
-- How Python is being used for education
-- Python for Hardware / Infrastructure
-- Security tools in Python and securing Python
-- Data science, AI and Machine Learning
-- Data engineering and management
-- Video Games (or game-related tooling) written in Python
-- MicroPython, CircuitPython, embedded software
-- Scaling Python applications
+- How to start as a Python developer
+- Code infrastructure & starting new projects, e.g. with community-backed tools like uv or pixi
+- Testing/CI best practices; apps or libraries
+- Performant Python code
+- Making use of 3.13t (free-threaded Python with no GIL lock)
+- Sustainable Python code
+- How to do my cool thing in Python
+- Python as a tool for education
+- How to contribute to the Python language
+- Python 3.13, 3.14, 3.15: What’s new?
+- Python in data analysis & visualization tools
+- Python in AI & machine learning
+- Reproducibility and best-practices (e.g. lockfile usage)
+- The scientific Python ecosystem
+- How to write secure Python code
+- Python governance structure
+- Python success stories
+- Interoperability and cross-language bindings for Python
+- New Python projects
 
 ## Volunteers
 
@@ -85,7 +92,6 @@ You can reach out directly to the organizers, if you have a specific request or 
 
 - Marc-André Lemburg: mal+fosdem [at] egenix.com 
 - Rosie Wood: rwood [at] turing.ac.uk
-- Ludo
 
 ---
 _hidden: no
