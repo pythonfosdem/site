@@ -1,0 +1,29 @@
+_model: talk
+---
+title: The GIL and API Performance: Past, Present, and Free-Threaded Future
+---
+subtitle:
+---
+description:
+
+Python's Global Interpreter Lock has shaped the way developers build concurrent applications for nearly three decades. While the GIL simplified the CPython ecosystem, it also imposed well-known limits on CPU-bound work and multithreaded scalability. With the introduction of free-threaded Python (3.14t), that is about to change.
+
+This talk examines how free-threading affects real workloads through benchmarks and explores its impact on webservers, ASGI frameworks, and WSGI stacks. It aims to help developers understand the implications of the GIL's removal for scaling Python applications in production environments.
+---
+abstract:
+
+Python's Global Interpreter Lock has shaped the way developers build concurrent applications for nearly three decades. With the introduction of free-threaded Python (3.14t), that is about to change. This talk examines how free-threading affects real workloads through benchmarks and explores its impact on webservers, ASGI frameworks, and WSGI stacks.
+---
+author: ruben-hias
+---
+day: 2026-01-31
+---
+start_at: 15:30
+---
+stop_at: 16:00
+---
+hour: 15:30
+---
+room: ua2220
+---
+duration: 30

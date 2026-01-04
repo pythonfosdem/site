@@ -1,0 +1,37 @@
+_model: talk
+---
+title: PyInfra: Because Your Infrastructure Deserves Real Code in Python, Not YAML Soup
+---
+subtitle: Because Your Infrastructure Deserves Real Code in Python, Not YAML Soup
+---
+description:
+
+Remember when we said "Infrastructure as Code"? Somehow, the industry heard "Infrastructure as YAML" and ran with it.
+
+This presentation critiques YAML-based infrastructure tools and promotes PyInfra as a Python-based alternative. Key topics covered include:
+
+- Writing infrastructure automation with real Python code and IDE support
+- Debugging with proper stack traces instead of cryptic error messages
+- Using native Python conditionals rather than complex DSL syntax
+- Importing and reusing code like standard software development
+- Testing infrastructure with pytest instead of staging environments
+
+The talk demonstrates converting a 500-line Ansible playbook into 50 lines of maintainable Python code, highlighting benefits like list comprehensions and actual logic capabilities.
+---
+abstract:
+
+Remember when we said "Infrastructure as Code"? Somehow, the industry heard "Infrastructure as YAML" and ran with it. This talk promotes PyInfra as a Python-based alternative for infrastructure automation with real code, IDE support, proper debugging, and testing with pytest.
+---
+author: loic-tosser-wowi42
+---
+day: 2026-01-31
+---
+start_at: 16:30
+---
+stop_at: 17:00
+---
+hour: 16:30
+---
+room: ua2220
+---
+duration: 30

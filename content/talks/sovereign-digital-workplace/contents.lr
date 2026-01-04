@@ -1,0 +1,29 @@
+_model: talk
+---
+title: Building a sovereign digital workplace with the help of Python, an example of the french administration
+---
+subtitle: an example of the french administration
+---
+description:
+
+The French digital agency (DINUM) has undertaken to develop an open-source collaborative digital workplace to make the work of public servants simpler and more effective.
+
+This presentation covers two integrated applications: Suite Docs for collaborative editing and Drive for file sharing, both built on Python, Django, and PostgreSQL. The speaker will discuss quality processes, development workflows, and how a proven technology stack enables teams to address complex challenges.
+---
+abstract:
+
+The French digital agency (DINUM) has undertaken to develop an open-source collaborative digital workplace to make the work of public servants simpler and more effective. This presentation covers two integrated applications: Suite Docs for collaborative editing and Drive for file sharing, both built on Python, Django, and PostgreSQL.
+---
+author: manuel-raynaud
+---
+day: 2026-01-31
+---
+start_at: 18:00
+---
+stop_at: 18:30
+---
+hour: 18:00
+---
+room: ua2220
+---
+duration: 30

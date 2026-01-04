@@ -1,0 +1,27 @@
+_model: talk
+---
+title: The Bakery: How PEP810 sped up my bread operations business
+---
+subtitle:
+---
+description:
+
+Discover how PEP 810's explicit lazy imports can dramatically improve Python application startup times. Using a real CLI tool as a case study, that we totally use in our real business, this talk demonstrates practical techniques to optimize import performance while maintaining code clarity and safety.
+---
+abstract:
+
+Discover how PEP 810's explicit lazy imports can dramatically improve Python application startup times. Using a real CLI tool as a case study, this talk demonstrates practical techniques to optimize import performance while maintaining code clarity and safety.
+---
+author: jacob-coffee
+---
+day: 2026-01-31
+---
+start_at: 15:00
+---
+stop_at: 15:30
+---
+hour: 15:00
+---
+room: ua2220
+---
+duration: 30

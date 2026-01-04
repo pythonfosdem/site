@@ -1,0 +1,31 @@
+_model: talk
+---
+title: Ducks to the rescue - ETL using Python and DuckDB
+---
+subtitle:
+---
+description:
+
+ETL stands for "extract, transform, load" and is a synonym for moving data around. This has traditionally often required managing complex systems in the cloud or large data centers.
+
+ETL traditionally followed extract-transform-load order, but modern approaches based on data lakes often transform data within database systems for efficiency with large volumes. Rather than requiring complex workflow systems and distributed infrastructure, contemporary tools allow simpler implementations.
+
+This talk covers how Python and DuckDB—both open-source and resource-efficient—can handle ETL processes on standard computers or notebooks. Python is highlighted as having extensive backend connectors, while DuckDB is presented as a capable embedded OLAP database with data lake support. The presentation will overview typical ETL steps, introduce DuckDB, and demonstrate its practical application, potentially including optimization strategies.
+---
+abstract:
+
+ETL traditionally required managing complex systems in the cloud or large data centers. This talk covers how Python and DuckDB—both open-source and resource-efficient—can handle ETL processes on standard computers or notebooks. The presentation will overview typical ETL steps, introduce DuckDB, and demonstrate its practical application.
+---
+author: marc-andre-lemburg
+---
+day: 2026-01-31
+---
+start_at: 17:00
+---
+stop_at: 17:30
+---
+hour: 17:00
+---
+room: ua2220
+---
+duration: 30

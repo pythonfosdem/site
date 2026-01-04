@@ -1,0 +1,29 @@
+_model: talk
+---
+title: Modern Python monorepo with `uv`, `workspaces`, `prek` and shared libraries
+---
+subtitle:
+---
+description:
+
+Apache Airflow is the most popular Data Workflow Orchestrator - developed under the Apache Software Foundation umbrella. We have 120+ Python distributions in our repo, and we often release ~ 100 of them every two weeks.
+
+This presentation explains how recent Python packaging tools like `uv` and `prek` have simplified managing a massive monorepo, allowing us to eliminate thousands of lines of custom code. Additionally, the talk covers an innovative approach to implementing "statically linked" libraries in Python, enabling the use of different versions of the same library within a single system.
+---
+abstract:
+
+Apache Airflow is the most popular Data Workflow Orchestrator with 120+ Python distributions. This talk explains how recent Python packaging tools like `uv` and `prek` have simplified managing a massive monorepo, and covers an innovative approach to implementing "statically linked" libraries in Python.
+---
+author: jarek-potiuk
+---
+day: 2026-01-31
+---
+start_at: 16:00
+---
+stop_at: 16:30
+---
+hour: 16:00
+---
+room: ua2220
+---
+duration: 30

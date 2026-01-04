@@ -1,0 +1,29 @@
+_model: talk
+---
+title: Lightning Talks
+---
+subtitle:
+---
+description:
+
+An official lightning talks session in the Python Devroom, following the success of last year's impromptu lightning talks session.
+
+Lightning talks are short 5-minute presentations where speakers can share quick ideas, demos, or experiences with the Python community. This is an opportunity for spontaneous talks and community interaction.
+---
+abstract:
+
+An official lightning talks session in the Python Devroom. Lightning talks are short 5-minute presentations where speakers can share quick ideas, demos, or experiences with the Python community.
+---
+author: marc-andre-lemburg
+---
+day: 2026-01-31
+---
+start_at: 18:30
+---
+stop_at: 19:00
+---
+hour: 18:30
+---
+room: ua2220
+---
+duration: 30

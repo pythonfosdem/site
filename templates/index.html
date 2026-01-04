@@ -7,6 +7,35 @@
         </div>
         {% endif %}
         {% for item in this.body.blocks %}
+            {% if item._flowblock == 'location' %}
+                {# Display talks before location #}
+                {% if site.query('/talks').count() %}
+                <div class="row">
+                    <h1 class="page-header">Talks</h1>
+                </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Talk</th>
+                                <th>Speaker</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for talk in site.query('/talks')|sort(attribute='start_at') %}
+                            <tr>
+                                <td>{{ talk.start_at }}</td>
+                                <td><a href="{{ talk|url }}">{{ talk.title }}</a></td>
+                                {% set author = site.query('/speakers').filter(F._id == talk.author).first() %}
+                                <td>{% if author %}<a href="{{ author|url }}">{{ author.name }}</a>{% endif %}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+            {% endif %}
             {{ item }}
         {% endfor %}
 

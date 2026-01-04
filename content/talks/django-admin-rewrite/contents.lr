@@ -1,0 +1,29 @@
+_model: talk
+---
+title: Is it time for a Django Admin rewrite? If so, how?
+---
+subtitle:
+---
+description:
+
+Django's built-in admin is powerful, but it's essentially a separate framework within Django and it's 20 years old.
+
+This talk proposes Django-Admin-Deux as "a proof-of-concept Django admin replacement where CRUD operations are just actions, knowledge transfers both ways, and everything feels like Django." The presentation explores Python features and architecture that make this alternative approach possible.
+---
+abstract:
+
+Django's built-in admin is powerful, but it's essentially a separate framework within Django and it's 20 years old. This talk proposes Django-Admin-Deux as a proof-of-concept Django admin replacement where CRUD operations are just actions, knowledge transfers both ways, and everything feels like Django.
+---
+author: emma-delescolle
+---
+day: 2026-01-31
+---
+start_at: 17:30
+---
+stop_at: 18:00
+---
+hour: 17:30
+---
+room: ua2220
+---
+duration: 30
