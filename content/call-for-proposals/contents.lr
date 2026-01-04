@@ -5,6 +5,15 @@ title: Call for Proposals
 body:
 
 #### md-section ####
+title:
+----
+content:
+
+<div class="alert alert-info" role="alert">
+  <strong>CFP Closed</strong> — Thank you to everyone who submitted a talk proposal for FOSDEM 2026! The Call for Proposals closed on December 1, 2025. We have reviewed the submissions and the selected talks are now available on the <a href="https://fosdem.org/2026/schedule/track/python/" class="alert-link">FOSDEM schedule</a>.
+</div>
+----
+#### md-section ####
 title: Call for Proposals
 ----
 content:
@@ -51,7 +60,7 @@ The Python devroom is currently scheduled to be held on January 31 in the aftern
 
 ## Speaker Guidelines
 
-Please submit your talk proposals using the [CFP submission page](https://pretalx.fosdem.org/fosdem-2026/cfp).
+Submissions were previously accepted through the [Pretalx submission page](https://pretalx.fosdem.org/fosdem-2026/cfp) (now closed). Below are the guidelines that applied to all proposals:
 
 - FOSDEM is using a self-hosted Pretalx installation for managing talk submissions. You will need to create an account, if you don’t already have one.
 - In the Submission notes field, please also confirm that if your talk is accepted, you will be able to attend FOSDEM and deliver your presentation. We will not consider proposals from prospective speakers who are unsure whether they will be able to secure funds for travel and lodging to attend FOSDEM. Sadly, we are not able to offer travel funding for prospective speakers.
