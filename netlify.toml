@@ -1,3 +1,7 @@
+[build]
+  command = "pip install -r requirements.txt && lektor build --output-path public"
+  publish = "public"
+
 [context.production.environment]
 # Python version for Netlify builds
 # Note: .tool-versions only contains Task (not Python) to avoid mise conflicts

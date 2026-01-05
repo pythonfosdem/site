@@ -3,7 +3,15 @@
         <h2>{{ this.title }}</h2>
     </div>
     <div class="col-md-6">
-        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=4.37756359577179%2C50.812527886898934%2C4.381104111671449%2C50.81403113271819&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/50.81328/4.37933">Afficher une carte plus grande</a></small>
+        {% set zoom = 15 %}
+        {% set delta = 0.01 %}
+        {% set bbox = "{},{},{},{}".format(
+            this.longitude - delta,
+            this.latitude - delta,
+            this.longitude + delta,
+            this.latitude + delta
+        ) %}
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox={{ bbox|urlencode }}&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map={{ zoom }}/{{ this.latitude }}/{{ this.longitude }}">Afficher une carte plus grande</a></small>
     </div>
     <div class="col-md-6">
         <address>
