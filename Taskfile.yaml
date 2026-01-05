@@ -7,7 +7,7 @@ tasks:
     desc: Create Python virtual environment
     cmds:
       - python3 -m venv .venv
-      - .venv/bin/python -m pip install --upgrade pip
+      - .venv/bin/python -m pip install --quiet --upgrade pip pip-tools
     status:
       - test -d .venv
 
@@ -38,16 +38,16 @@ tasks:
     desc: Install the dependencies
     deps: [venv]
     cmds:
-      - .venv/bin/python -m pip install -r requirements.txt pip-tools
+      - .venv/bin/python -m pip install --quiet -r requirements.txt
 
   dependencies:build:
     desc: Build the dependencies via pip-tools
     deps: [venv]
     cmds:
-      - .venv/bin/pip-compile requirements.in --output-file requirements.txt
+      - .venv/bin/pip-compile --quiet --strip-extras requirements.in --output-file requirements.txt
 
   dependencies:update:
     desc: Update the dependencies via pip-tools
     deps: [venv]
     cmds:
-      - .venv/bin/pip-compile --upgrade requirements.in --output-file requirements.txt
+      - .venv/bin/pip-compile --quiet --strip-extras --upgrade requirements.in --output-file requirements.txt
