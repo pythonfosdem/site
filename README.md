@@ -54,22 +54,19 @@ via `PYTHON_VERSION` in `netlify.toml` for Netlify builds.
 
 ## Installation
 
-### 1. Create Virtual Environment
+Task handles virtualenv creation and dependency installation automatically:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate  # On macOS/Linux
-# or
-.venv\Scripts\activate  # On Windows
+# Quick start (creates venv + installs deps + starts server)
+task serve
+
+# Or step by step:
+task venv                    # Create virtual environment
+task dependencies:install    # Install dependencies
+task serve                   # Start development server
 ```
 
-### 2. Install Dependencies
-
-```bash
-task dependencies:install
-```
-
-This will install Lektor and all necessary dependencies defined in `requirements.txt`.
+**Note:** The Taskfile automatically creates `.venv` if it doesn't exist, so you can run `task serve` directly from a fresh checkout.
 
 ## Usage
 

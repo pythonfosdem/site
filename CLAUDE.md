@@ -32,18 +32,20 @@ python3 --version  # Should show 3.12.x
 # Option 2: mise global (if system Python unavailable)
 # mise use -g python@3.12.12
 
-# Create virtual environment
-python3 -m venv .venv
-source .venv/bin/activate  # On macOS/Linux
+# Quick start - Task handles venv creation and dependencies automatically
+task serve
 
-# Install dependencies
-task dependencies:install
+# Or step by step:
+task venv                    # Create virtual environment
+task dependencies:install    # Install dependencies
+task serve                   # Start development server
 ```
 
 **Note on Version Management:**
 - Task 3.45.4 is managed via `.tool-versions` (installed with `mise install`)
 - Python 3.12.12 is NOT in `.tool-versions` to avoid Netlify mise conflicts
 - Netlify uses `PYTHON_VERSION` environment variable from `netlify.toml`
+- The Taskfile automatically creates `.venv` if missing (via `deps` mechanism)
 
 **Development:**
 ```bash

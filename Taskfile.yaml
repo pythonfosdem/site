@@ -3,32 +3,51 @@
 version: '3'
 
 tasks:
+  venv:
+    desc: Create Python virtual environment
+    cmds:
+      - python3 -m venv .venv
+      - .venv/bin/python -m pip install --upgrade pip
+    status:
+      - test -d .venv
+
   serve:
     desc: Serve the site
+    deps: [dependencies:install]
     cmds:
       - .venv/bin/lektor serve --verbose --prune
 
   build:
     desc: Build the site
+    deps: [dependencies:install]
     cmds:
       - .venv/bin/lektor build --verbose --prune
 
   clean:
-    desc: Clean the artifcats of the site
+    desc: Clean the artifacts of the site
+    deps: [venv]
     cmds:
       - .venv/bin/lektor clean --yes
 
+  clean:all:
+    desc: Clean all artifacts including venv
+    cmds:
+      - rm -rf .venv build/ public/ .netlify
+
   dependencies:install:
     desc: Install the dependencies
+    deps: [venv]
     cmds:
       - .venv/bin/python -m pip install -r requirements.txt pip-tools
 
   dependencies:build:
     desc: Build the dependencies via pip-tools
+    deps: [venv]
     cmds:
       - .venv/bin/pip-compile requirements.in --output-file requirements.txt
 
   dependencies:update:
     desc: Update the dependencies via pip-tools
+    deps: [venv]
     cmds:
       - .venv/bin/pip-compile --upgrade requirements.in --output-file requirements.txt
