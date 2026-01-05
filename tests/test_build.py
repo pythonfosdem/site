@@ -1,7 +1,6 @@
 """Test that Lektor builds successfully"""
+
 import subprocess
-import pytest
-from pathlib import Path
 
 
 def test_lektor_build_succeeds(tmp_path):

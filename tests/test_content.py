@@ -1,6 +1,8 @@
 """Test content (.lr files) structure and validity"""
-import pytest
+
 from pathlib import Path
+
+import pytest
 
 
 def get_all_lr_files():
@@ -45,9 +47,7 @@ def test_talks_directory_structure():
         pytest.skip("No talks directory found")
 
     # Get all talk directories (exclude the parent talks/contents.lr)
-    talk_dirs = [
-        d for d in talks_dir.iterdir() if d.is_dir() and (d / "contents.lr").exists()
-    ]
+    talk_dirs = [d for d in talks_dir.iterdir() if d.is_dir() and (d / "contents.lr").exists()]
 
     assert len(talk_dirs) > 0, "No talks found in content/talks/"
 
@@ -65,9 +65,7 @@ def test_speakers_directory_structure():
         pytest.skip("No speakers directory found")
 
     speaker_dirs = [
-        d
-        for d in speakers_dir.iterdir()
-        if d.is_dir() and (d / "contents.lr").exists()
+        d for d in speakers_dir.iterdir() if d.is_dir() and (d / "contents.lr").exists()
     ]
 
     assert len(speaker_dirs) > 0, "No speakers found in content/speakers/"
