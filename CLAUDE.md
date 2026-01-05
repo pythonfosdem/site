@@ -68,6 +68,29 @@ task dependencies:build
 task dependencies:update
 ```
 
+**Testing:**
+```bash
+# Run tests
+task test
+
+# Run tests with coverage
+task test:coverage
+
+# Run linting
+task lint
+
+# Format code
+task format
+
+# Run all CI checks locally
+task ci
+```
+
+**CI/CD:**
+- GitHub Actions runs tests on every push/PR
+- Tests must pass before merging
+- Netlify deploys from main branch after successful merge
+
 **Direct Lektor Commands** (when you need more control):
 ```bash
 # Serve with specific options

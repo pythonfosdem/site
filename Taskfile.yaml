@@ -7,7 +7,7 @@ tasks:
     desc: Create Python virtual environment
     cmds:
       - python3 -m venv .venv
-      - .venv/bin/python -m pip install --upgrade pip
+      - .venv/bin/python -m pip install --quiet --upgrade pip pip-tools
     status:
       - test -d .venv
 
@@ -38,16 +38,49 @@ tasks:
     desc: Install the dependencies
     deps: [venv]
     cmds:
-      - .venv/bin/python -m pip install -r requirements.txt pip-tools
+      - .venv/bin/python -m pip install --quiet -r requirements.txt
 
   dependencies:build:
     desc: Build the dependencies via pip-tools
     deps: [venv]
     cmds:
-      - .venv/bin/pip-compile requirements.in --output-file requirements.txt
+      - .venv/bin/pip-compile --quiet --strip-extras requirements.in --output-file requirements.txt
 
   dependencies:update:
     desc: Update the dependencies via pip-tools
     deps: [venv]
     cmds:
-      - .venv/bin/pip-compile --upgrade requirements.in --output-file requirements.txt
+      - .venv/bin/pip-compile --quiet --strip-extras --upgrade requirements.in --output-file requirements.txt
+
+  test:
+    desc: Run tests
+    deps: [dependencies:install]
+    cmds:
+      - .venv/bin/pytest tests/ -v
+
+  test:coverage:
+    desc: Run tests with coverage report
+    deps: [dependencies:install]
+    cmds:
+      - .venv/bin/pytest tests/ --cov=packages --cov-report=term-missing --cov-report=html
+
+  lint:
+    desc: Run code linting with ruff
+    deps: [dependencies:install]
+    cmds:
+      - .venv/bin/ruff check tests/
+      - .venv/bin/ruff format --check tests/
+
+  format:
+    desc: Auto-format code with ruff
+    deps: [dependencies:install]
+    cmds:
+      - .venv/bin/ruff format tests/
+      - .venv/bin/ruff check --fix tests/
+
+  ci:
+    desc: Run all CI checks locally (lint + test + build)
+    cmds:
+      - task: lint
+      - task: test
+      - task: build
