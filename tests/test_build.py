@@ -1,6 +1,17 @@
 """Test that Lektor builds successfully"""
 
+import shutil
 import subprocess
+
+
+def get_lektor_command():
+    """Find lektor executable (works in CI and local development)"""
+    # Try .venv/bin/lektor first (local development)
+    local_lektor = ".venv/bin/lektor"
+    if shutil.which(local_lektor):
+        return local_lektor
+    # Fall back to system lektor (CI environment)
+    return "lektor"
 
 
 def test_lektor_build_succeeds(tmp_path):
@@ -8,7 +19,7 @@ def test_lektor_build_succeeds(tmp_path):
     output_dir = tmp_path / "build-output"
 
     result = subprocess.run(
-        [".venv/bin/lektor", "build", "--output-path", str(output_dir)],
+        [get_lektor_command(), "build", "--output-path", str(output_dir)],
         capture_output=True,
         text=True,
         timeout=60,
@@ -33,7 +44,7 @@ def test_build_output_contains_expected_files(tmp_path):
     output_dir = tmp_path / "build-output"
 
     subprocess.run(
-        [".venv/bin/lektor", "build", "--output-path", str(output_dir)],
+        [get_lektor_command(), "build", "--output-path", str(output_dir)],
         capture_output=True,
         timeout=60,
     )
