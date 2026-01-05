@@ -13,8 +13,44 @@ Official website for the Python FOSDEM 2026 conference, built with [Lektor](http
 
 ## Prerequisites
 
-- Python 3.12.12 (recommended to use [pyenv](https://github.com/pyenv/pyenv) or [asdf](https://asdf-vm.com/))
-- [Task](https://taskfile.dev/) (for command automation)
+- Python 3.12.12 (system installation or [mise](https://mise.jdx.dev/) global)
+- [Task](https://taskfile.dev/) 3.45.4 (managed via `.tool-versions`)
+- [mise](https://mise.jdx.dev/) for tool version management (recommended)
+
+## Version Management
+
+This project uses **mise** for tool version management.
+
+### Setup with mise
+
+1. **Install mise** (if not already installed):
+   ```bash
+   curl https://mise.run | sh
+   # or on macOS: brew install mise
+   ```
+
+2. **Install Task** (from `.tool-versions`):
+   ```bash
+   mise install
+   ```
+
+3. **Install Python 3.12.12**:
+
+   Python is managed separately to avoid Netlify mise conflicts:
+
+   ```bash
+   # Option 1: System installation (simplest)
+   # Follow your OS-specific instructions
+
+   # Option 2: mise global (not in project .tool-versions)
+   mise use -g python@3.12.12
+   ```
+
+### Why Python is not in .tool-versions
+
+Netlify uses mise internally and conflicts arise when `.tool-versions` specifies Python.
+The project `.tool-versions` only contains Task to avoid these conflicts. Python is managed
+via `PYTHON_VERSION` in `netlify.toml` for Netlify builds.
 
 ## Installation
 
