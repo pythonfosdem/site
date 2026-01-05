@@ -18,6 +18,20 @@ This is a **Lektor static site generator** project for the Python FOSDEM confere
 
 **Setup:**
 ```bash
+# Install mise (if not already installed)
+curl https://mise.run | sh
+# or: brew install mise
+
+# Install Task from .tool-versions
+mise install
+
+# Ensure Python 3.12.12 is available
+# Option 1: System Python (recommended)
+python3 --version  # Should show 3.12.x
+
+# Option 2: mise global (if system Python unavailable)
+# mise use -g python@3.12.12
+
 # Create virtual environment
 python3 -m venv .venv
 source .venv/bin/activate  # On macOS/Linux
@@ -25,6 +39,11 @@ source .venv/bin/activate  # On macOS/Linux
 # Install dependencies
 task dependencies:install
 ```
+
+**Note on Version Management:**
+- Task 3.45.4 is managed via `.tool-versions` (installed with `mise install`)
+- Python 3.12.12 is NOT in `.tool-versions` to avoid Netlify mise conflicts
+- Netlify uses `PYTHON_VERSION` environment variable from `netlify.toml`
 
 **Development:**
 ```bash
