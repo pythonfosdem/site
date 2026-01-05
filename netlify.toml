@@ -1,2 +1,6 @@
+[build]
+  command = "lektor build --output-path public"
+  publish = "public"
+
 [context.production.environment]
 PYTHON_VERSION = "3.12"
