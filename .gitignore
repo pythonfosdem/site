@@ -5,3 +5,13 @@
 build/
 public/
 .venv/
+
+# Testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+__pycache__/
+
+# Test build output
+test-output/

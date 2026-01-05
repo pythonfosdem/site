@@ -110,6 +110,36 @@ Update all dependencies to latest versions:
 task dependencies:update
 ```
 
+## Testing
+
+### Run Tests Locally
+
+```bash
+# Run all tests
+task test
+
+# Run tests with coverage report (for future Python code)
+task test:coverage
+
+# Run linting checks
+task lint
+
+# Auto-format code
+task format
+
+# Run full CI suite (lint + test + build)
+task ci
+```
+
+### Continuous Integration
+
+This project uses GitHub Actions for automated testing:
+- **On every push/PR**: Runs linting, tests, and build validation
+- **Required checks**: All tests must pass before merging PRs
+- **Coverage**: Code coverage can be enabled for custom Python code in `packages/`
+
+See `.github/workflows/ci.yml` for the full CI configuration.
+
 ## Project Structure
 
 ```
