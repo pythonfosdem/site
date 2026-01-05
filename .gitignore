@@ -3,4 +3,5 @@
 # Local Netlify folder
 .netlify
 build/
+public/
 .venv/

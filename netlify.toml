@@ -1,2 +1,5 @@
 [context.production.environment]
+# Python version for Netlify builds
+# Note: .tool-versions only contains Task (not Python) to avoid mise conflicts
+# Netlify's internal mise conflicts with project .tool-versions containing Python
 PYTHON_VERSION = "3.12"
